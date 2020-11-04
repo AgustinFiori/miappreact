@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
 import NavBar from "./components/NavBar/NavBar.js";
-import Saludo from "./components/Home/home.js"
+import Saludo from "./components/Home/home.js";
+import Promise from "./components/Items/Item.js"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,9 @@ function App() {
         setCount(count-1)}}
 
       >-</button>
+      
+      <Promise />
+      
     </div>
   );
 }
